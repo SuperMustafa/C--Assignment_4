@@ -1,0 +1,14 @@
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\bin\Debug\net8.0\Assignment-04.exe
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\bin\Debug\net8.0\Assignment-04.deps.json
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\bin\Debug\net8.0\Assignment-04.runtimeconfig.json
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\bin\Debug\net8.0\Assignment-04.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\bin\Debug\net8.0\Assignment-04.pdb
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.AssemblyInfoInputs.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.AssemblyInfo.cs
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.csproj.CoreCompileInputs.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\refint\Assignment-04.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.pdb
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\Assignment-04.genruntimeconfig.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Assignment-04\obj\Debug\net8.0\ref\Assignment-04.dll

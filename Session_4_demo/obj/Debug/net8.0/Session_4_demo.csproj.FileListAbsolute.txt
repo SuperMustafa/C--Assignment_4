@@ -1,0 +1,14 @@
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\bin\Debug\net8.0\Session_4_demo.exe
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\bin\Debug\net8.0\Session_4_demo.deps.json
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\bin\Debug\net8.0\Session_4_demo.runtimeconfig.json
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\bin\Debug\net8.0\Session_4_demo.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\bin\Debug\net8.0\Session_4_demo.pdb
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.GeneratedMSBuildEditorConfig.editorconfig
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.AssemblyInfoInputs.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.AssemblyInfo.cs
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.csproj.CoreCompileInputs.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\refint\Session_4_demo.dll
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.pdb
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\Session_4_demo.genruntimeconfig.cache
+E:\asp.net\Assignments\c#-Assignment-02\Session_4\Session_4_demo\obj\Debug\net8.0\ref\Session_4_demo.dll
