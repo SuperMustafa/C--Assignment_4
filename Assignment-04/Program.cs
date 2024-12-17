@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Reflection;
 using System.Security.Principal;
 using System.Threading.Tasks;
 
@@ -8,6 +9,7 @@ namespace Assignment_04
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             #region Q2
@@ -303,7 +305,7 @@ namespace Assignment_04
             //    Console.WriteLine($"Enter index {i+1}");
             //    numbers[i]=int.Parse( Console.ReadLine() );
             //}
-           
+
 
             //Array.Reverse(numbers);
             //for (int i = 0; i < numbers.Length; i++)
@@ -311,8 +313,256 @@ namespace Assignment_04
             //    Console.Write(numbers[i]);
             //}
             #endregion
+            #region Q12
+            //Explain the difference between passing(Value type parameters) by value
+            //and by reference then write a suitable c# example.
+
+            //==============Answer============
+            //passing value type parameters (by value)
+            // when i passing parameter value type to function (value type) that mean iam sending a copy of 
+            // the base value and they are not attached to eachathor 
+            //Changes inside the method are made to the copy, not the original value.
+            //ex
+
+            //static void change(int x, int y)
+            //{
+            //    int temp = 0;
+            //    temp = x;
+            //    x = y;
+            //    y = temp;
+            //}
+
+            //int num1 = 10;
+            //int num2 = 20;
+            //change(num1, num2);
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+
+
+            //passing value type parameters (by refernce)
+            //When you pass a parameter by reference, the method receives a reference (or address) to the actual data.
+            //Changes made to the parameter inside the method affect the original data.
+            //The caller and the method work with the same memory location.
+
+
+            //static void change(ref int x,ref int y)
+            //{
+            //    int temp = 0;
+            //    temp = x;
+            //    x = y;
+            //    y = temp;
+            //}
+
+            //int num1 = 10;
+            //int num2 = 20;
+            //change(ref num1,ref num2);
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+            #endregion
+            #region Q13
+            //Explain the difference between passing (Reference type parameters) by value and
+            //by reference then write a suitable c# example.
+
+            //==============Answer===============
+            //passing refernce type parameters (by value)
+
+            //When passing a reference type by value, a copy of the reference(pointer) is passed to the method.
+            //    The method can modify the object the reference points to, but it cannot change the reference itself
+            //    to point to a new object.
+            //   The method works with the same object that the caller passed,
+            //   so changes to the object's fields or properties persist.
+
+            //static int Sumarray(int[] arr)
+            //{
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        arr[0] = 100;
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+            //    }
+            //    return sum;
+
+            //}
+            //int[] nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine(Sumarray(nums)); ;
+
+
+
+            //passing refernce type parameters (by ref)
+
+            //When passing a reference type by reference, the method receives a reference to the reference itself.
+            //This allows the method to:
+
+            //Modify the object's fields or properties (same as passing by value).
+            //Assign a new object to the reference, and this new assignment does affect the caller's reference.
+            //The method has full control over the reference and the object it points to.
+
+
+            //static int Sumarray( ref int[] arr)
+            //{
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        arr[0] = 100;
+            //        arr = new int[] {2,2,2,2};
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+            //    }
+            //    return sum;
+
+            //}
+            //int[] nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine( Sumarray(ref nums)); 
+
+            #endregion
+            #region Q14
+
+            //Write a c# Function that accept 4 parameters from user and return result of
+            //summation and subtracting of two numbers
+
+            //static void sumAndMulti(int num1,int num2,int num3,int num4) { 
+
+
+            //    int sum=num1 + num2;
+            //    int multi=num3 * num4;
+            //    Console.WriteLine($"summation is : {sum}");
+            //    Console.WriteLine($"subtracting is : {multi}");
+
+
+
+
+            //}
+
+            //sumAndMulti(2, 3, 4, 5);
+
+
+
+            #endregion
+            #region Q15
+            //Write a program in C# Sharp to create a function to calculate the sum
+            //of the individual digits of a given number.
+            //static int  sum(int number)
+            //{
+            //    int sum = 0;
+
+            //    do
+            //    {
+            //        int digit=number % 10;
+            //        sum += digit;
+            //        number /= 10;
+
+            //    }
+            //    while (number > 0);
+            //    return sum;
+
+
+            //}
+
+            //int result = sum(325);
+            //Console.WriteLine(result);
+
+            #endregion
+            #region Q16
+            //Create a function named "IsPrime", which receives an integer number and retuns true if it is prime,
+            //or false if it is not:
+
+            //static string IsPrime(int number) 
+            //{
+            //    string message;
+            //    int count = 0;
+
+            //    for (int i = number - 1; i >= 1; i--)
+            //    {
+            //        if (number % i == 0)
+            //        {
+            //            count++;
+            //            if (count >= 2)
+            //            {
+            //                message = "false";
+
+            //            }
+            //            else
+            //            {
+            //                message = "true";
+            //            }
+
+            //        }
+            //    }
+            //    return message;
+
+
+            //};
+            // static bool IsPrime(int number)
+            // {
+            //     if (number <= 1) 
+            //         return false;
+            //     if (number == 2) 
+            //         return true;
+
+
+            //     for (int i = 2; i * i <= number; i++)
+            //     {
+            //         if (number % i == 0) 
+            //             return false;
+            //     }
+
+            //     return true; 
+            // }
+            //bool res= IsPrime(99);
+            // Console.WriteLine(res);
+
+
+
+            #endregion
+            #region Q17
+            //Create a function named MinMaxArray, to return the minimum and maximum values stored in an array,
+            //using reference parameters
+
+            //    int[] numbers = { 2,5,100,111,545,0,9 };
+            //    int min = 0, max = 0;
+
+            //    MinMaxArray(numbers, ref min, ref max);
+
+            //    Console.WriteLine($"Minimum: {min}");
+            //    Console.WriteLine($"Maximum: {max}");
+            //}
+
+            //public static void MinMaxArray(int[] array, ref int min, ref int max)
+            //{
+            //    if (array == null || array.Length == 0)
+            //    {
+            //        throw new ArgumentException("Array must not be null or empty");
+            //    }
+
+            //    // Initialize min and max with the first element of the array
+            //    min = array[0];
+            //    max = array[0];
+
+            //    // Iterate through the array to find the min and max
+            //    for (int i = 1; i < array.Length; i++)
+            //    {
+            //        if (array[i] < min)
+            //            min = array[i];
+            //        if (array[i] > max)
+            //            max = array[i];
+            //    }
+
+
+
+            #endregion
+            #region Q18
+            #endregion
+
         }
     }
 }
+
 
 

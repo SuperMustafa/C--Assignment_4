@@ -5,6 +5,10 @@ namespace Session_4_demo
 {
     internal class Program
     {
+      
+      
+   
+
         static void Main(string[] args)
         {
             #region string & stringbuilder
@@ -186,6 +190,195 @@ namespace Session_4_demo
             //}
 
             #endregion
+
+            #region Functions
+            //static void print(string name,string type)
+            //{
+            //    Console.WriteLine($"Function name is {name}");
+            //    Console.WriteLine($"Function type is  {type}");
+
+            //}
+            //print("print","void");
+
+            #region functions [value type] 
+
+            //static void swap(ref int x, ref int y)
+            //{
+            //    int temp;
+            //    temp = x;
+            //    x = y;
+            //    y = temp;
+            //}
+            //=====passing by value==========
+
+            //int a = 10,b = 5;
+            //swap(a,b);//send copy of values and the base element do not changes
+            //Console.WriteLine(a);
+            //Console.WriteLine(b); 
+
+
+
+
+            //=====passing by refernce ==========
+
+
+            //int a = 10, b = 5;
+            //swap(ref a, ref b);//send the element it self
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            #endregion
+            #region functions [refernce type]
+
+            //==========passing by value============
+            //static int Sumarray(int[] arr)
+            //{
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        arr[0] = 100;
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+            //    }
+            //    return sum;
+
+            //}
+            //int[] nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine(Sumarray(nums)); ;
+
+
+
+            //==========passing by ref=====================
+
+            //static int Sumarray(ref int[] arr)
+            //{
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        arr[0] = 100;
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+            //    }
+            //    return sum;
+
+            //}
+
+            //int[] nums = { 1, 2, 3, 4, 5 };
+            //Console.WriteLine(Sumarray(ref nums));
+            //Console.WriteLine(nums[0]);
+
+
+            // ============Another case of refernce type [passing by value]===================
+            //static int Sumarray(int[] arr)
+            //{
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        arr = new int[] { 11, 12, 13 };
+            //        arr[0] = 100;
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+            //    }
+            //    return sum;
+
+            //}
+
+            //int[] nums = { 1, 2, 3, 4, 5 };
+            //Console.WriteLine(Sumarray( nums));
+            //Console.WriteLine(nums[0]);
+
+
+            // ============Another case of refernce type [passing by ref]===================
+
+            //int[] nums = { 1, 2, 3};
+            //Console.WriteLine(Sumarray(ref nums));
+            //Console.WriteLine(nums[0]);
+            #endregion
+
+            #region passing by output
+            //static void sumAndMulti(int x, int y, out int multi, out int sum)
+            //{
+            //    multi = x * y;
+            //    sum = x + y;
+
+            //}
+            //int num1 = 10, num2=2;
+            //int multi, sum;
+            //sumAndMulti(num1, num2, out multi, out sum);
+            //Console.WriteLine(multi);
+            //Console.WriteLine(sum);
+
+
+            #endregion
+            #region function [params]
+            //static int sumArr(params int[] arr)
+            //{
+
+            //    int sum = 0;
+            //    if (arr != null)
+            //    {
+            //        for (int i = 0; i < arr.Length; i++)
+            //        {
+            //            sum += arr[i];
+            //        }
+
+
+            //    }
+            //    return sum;
+
+            //}
+            //int res = sumArr(1,2,3);
+            //Console.WriteLine(res);
+
+            // order of parameters in function 
+            //1- regular parameter => int y;
+            //2- parameter has a default value;
+            //3- params (params always be the latest parameter and if comes first it block after it )
+
+            #endregion
+
+            #endregion
+
+
+            #region Nullable value
+            //int x = 10; //do not allow null
+            //int? x1 = 10; //allow null
+            //x1 = null;
+
+
+            //============casting beween value type to nullable type============
+            //int x = 10;
+            //int? y = x; // true case without error
+            //int? y = 10;
+            //int x = y;   // false case because y accept null value and x donot
+
+            #region Null coelascing operator
+            //int? x =null;
+            //int y = x  != null?(int) x : 0;
+            ////int y=x??0;
+            //Console.WriteLine(y);
+
+
+
+            #endregion
+            #region Null propegation operator
+            //int[] arr = null;
+            //for (int i = 0; i < arr?.Length; i++)
+            //{
+            //    Console.WriteLine(arr.Length);
+            //}
+            #endregion
+            #region Null forgivness operator
+            //int [] arr = null!;
+            #endregion
+            #endregion
         }
     }
 }
+
